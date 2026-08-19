@@ -9,7 +9,7 @@
 ## 下载
 
 - 最新版本：[GitHub Releases](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
-- 当前版本：`0.32.49 (195)`
+- 当前版本：`0.32.50 (196)`
 - 系统要求：Android 8.0（API 26）及以上
 - 包名：`com.jxbp.aihub`
 
