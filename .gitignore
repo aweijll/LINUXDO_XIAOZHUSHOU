@@ -1,0 +1,17 @@
+# APK files are published only through GitHub Releases.
+*.apk
+*.aab
+
+# Never allow local build, signing, credential, or source trees into this docs repository.
+app/
+backend/
+scripts/
+.gradle/
+.idea/
+.vscode/
+.secrets/
+local.properties
+keystore.properties
+*.jks
+*.keystore
+服务器资料.txt
