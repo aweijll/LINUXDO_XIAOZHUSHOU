@@ -10,7 +10,6 @@
 
 - **当前版本：** `0.32.122 / versionCode 268`
 - **系统要求：** Android 8.0（API 26）及以上
-- **APK：** [`LINUXDO_XIAOZHUSHOU-v0.32.122.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.122/LINUXDO_XIAOZHUSHOU-v0.32.122.apk)
 - **完整发布页：** [GitHub Releases](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - **APK 大小：** `126,854,567 bytes`
 - **SHA-256：** `f6c0f96a77688756b545fa5e16fc82401063601d4244044b1e9ad31b0ce4fbf3`
