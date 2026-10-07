@@ -8,11 +8,6 @@
 
 ## 现在就下载
 
-- **当前版本：** `0.32.122 / versionCode 268`
-- **系统要求：** Android 8.0（API 26）及以上
-- **完整发布页：** [GitHub Releases](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
-- **APK 大小：** `126,854,567 bytes`
-- **SHA-256：** `f6c0f96a77688756b545fa5e16fc82401063601d4244044b1e9ad31b0ce4fbf3`
 
 > 只从本仓库 Releases 下载。升级时直接覆盖安装，**不要先卸载**，否则手机里的站点、Cookie、API Key、模型、签到记录和设置可能一起被删除。
 
