@@ -8,9 +8,9 @@ Android 上的多站点管理、模型聊天、本地 API 网关、SSH 工作台
 
 ## 下载与安装
 
-当前稳定版 **0.32.163**，更新日期 **2026-10-20**。Android 8.0（API 26）及以上，**仅支持 ARM64（arm64-v8a）**，安装包 **96.07 MiB**。
+当前稳定版 **0.32.164**，更新日期 **2026-10-20**。Android 8.0（API 26）及以上，**仅支持 ARM64（arm64-v8a）**，安装包 **96.10 MiB**。
 
-- [下载 0.32.163 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.163/LINUXDO_XIAOZHUSHOU-v0.32.163.apk)
+- [下载 0.32.164 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.164/LINUXDO_XIAOZHUSHOU-v0.32.164.apk)
 
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 
@@ -18,13 +18,13 @@ Android 上的多站点管理、模型聊天、本地 API 网关、SSH 工作台
 
 已安装用户可在 APP 内检查更新，或下载 APK 覆盖安装。**不要先卸载旧版本**；换机或重装前先备份。当前不提供 ARM32、x86 或 x86_64 安装包。
 
-## 0.32.163 更新
+## 0.32.164 更新
 
-1.修复论坛 LDC/CDK 授权及信任统计恢复，补齐相关网络接入。
-2.修复本地网关和排行榜卡片圆角内方形底色。
-3.新增纯图片相册、网格、轮播及分组拼贴，支持多图选择和导入去重。
+1. 新增绿色入口“AI帮你签-测试”：复用现有站点与模型，自动学习签到流程、本地脚本复用、失败修复和人工接续。
+2. 修复论坛 LDC 余额授权跳转、会话同步与数据解析，修复信任要求页面识别和登录后刷新。
+3. 保留原有签到机制；加强多站并发隔离、重复提交保护和结果报告。
 
-论坛 104 项与 Android 2431 项测试通过，Lint 通过；真实账号与手机视觉效果仍需设备验收。
+论坛 108 项、Android 2435 项测试通过，静态分析与 Lint 通过。真实账号和设备效果尚未验收。
 
 ## 0.32.155 更新
 
