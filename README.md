@@ -8,15 +8,23 @@ Android 上的多站点管理、模型聊天、本地 API 网关、SSH 工作台
 
 ## 下载与安装
 
-当前稳定版 **0.32.164**，更新日期 **2026-10-20**。Android 8.0（API 26）及以上，**仅支持 ARM64（arm64-v8a）**，安装包 **96.10 MiB**。
+当前稳定版 **0.32.165**，更新日期 **2026-10-22**。Android 8.0（API 26）及以上，**仅支持 ARM64（arm64-v8a）**，安装包 **96.10 MiB**。
 
-- [下载 0.32.164 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.164/LINUXDO_XIAOZHUSHOU-v0.32.164.apk)
+- [下载 0.32.165 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.165/LINUXDO_XIAOZHUSHOU-v0.32.165.apk)
 
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 
 - [文件大小、SHA-256 与签名校验](docs/VERIFY_DOWNLOAD.md)
 
 已安装用户可在 APP 内检查更新，或下载 APK 覆盖安装。**不要先卸载旧版本**；换机或重装前先备份。当前不提供 ARM32、x86 或 x86_64 安装包。
+
+## 0.32.165 更新
+
+1. 修复论坛「信任要求」在 Connect 会话失效时显示网络请求失败的问题，改为提示登录 Connect 后重试，并在请求前同步浏览器侧会话。
+
+2. 论坛内网页去掉地址胶囊底色、圆形按钮底色和底部工具栏，按原网页风格全屏显示，LDC 余额等页面不再被额外界面遮挡。
+
+论坛 110 项、Android 2435 项测试通过，静态分析与 Lint 通过。真实账号和设备效果尚未验收。
 
 ## 0.32.164 更新
 
