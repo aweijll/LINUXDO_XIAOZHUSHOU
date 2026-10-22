@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.166**（2026-10-22），Android 8.0 及以上，只支持 ARM64，安装包约 96 MiB。
+最新版 **0.32.167**（2026-10-22），Android 8.0 及以上，只支持 ARM64，安装包约 96 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.166/LINUXDO_XIAOZHUSHOU-v0.32.166.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.167/LINUXDO_XIAOZHUSHOU-v0.32.167.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,13 +12,17 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
+- 红果采集新剧和更新片源报 404、拉不到新剧：分类接口也换成了新签名，现在已经能正常翻页和更新。
+- 红果 AI 剧分类改用了新标识，列表恢复。
+- 某个分类偶尔抽风时，其它分类有结果就继续，不会整次采集失败。
+
+## 之前几版
+
+**0.32.166**（2026-10-22）
+
 - 红果短剧后段集数放不出来：换成官方新的播放接口，重做签名和片源解析，1080p 和加密流都能正常播放。
 - 帝果（dsd）域名失效，已换到新地址。
 - 论坛内置浏览器恢复完整工具栏，插件、朗读、缩放、刷新都还在。
-
-野果、黄果视频、黄果 AI 等源还在跟进，这一版先不保证可用。
-
-## 之前几版
 
 **0.32.165**（2026-10-22）
 
