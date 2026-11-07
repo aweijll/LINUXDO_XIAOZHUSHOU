@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.171**（2026-11-07），Android 8.0 及以上，只支持 ARM64，安装包约 96.25 MiB。
+最新版 **0.32.172**（2026-11-07），Android 8.0 及以上，只支持 ARM64，安装包约 96.26 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.171/LINUXDO_XIAOZHUSHOU-v0.32.171.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.172/LINUXDO_XIAOZHUSHOU-v0.32.172.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,10 +12,10 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
-- 修复 SSH 智能助手经本地网关聊天、调用技能时的断流误判和重复回复。
-- 重试改为固定间隔并共享任务预算；保留中断内容和工具结果，支持手动继续。
-- 本地网关新增自动、OpenAI Chat、Responses、Claude、Gemini 上游协议设置，SSH 支持跟随网关或单独指定入口协议。
-- 修复 Responses 工具调用上下文与完成事件处理，增加响应等待和流无活动超时设置。
+- 修复智能助手、模型聊天和 LINUXDO 帖子朗读约 50 字后停止的问题。
+- 优化首句起播、音频预取和段落衔接，失败仅重试未播放的分段。
+- 新增无需 API Key 的百度翻译、Google 翻译朗读及自动备用模式，保留 Edge 多音色。
+- 修复系统语音引擎不可见，支持选择已安装引擎和离线中文音色；修复失焦停播及失败后重复朗读。
 
 ## 之前几版
 
