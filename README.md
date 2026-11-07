@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.169**（2026-10-29），Android 8.0 及以上，只支持 ARM64，安装包约 96.23 MiB。
+最新版 **0.32.170**（2026-11-07），Android 8.0 及以上，只支持 ARM64，安装包约 96.23 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.169/LINUXDO_XIAOZHUSHOU-v0.32.169.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.170/LINUXDO_XIAOZHUSHOU-v0.32.170.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,10 +12,14 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
-- 修复红果短剧匿名设备播放链路：按网页播放模型、匿名 App 播放模型、备用接口顺序解析，首集与末集播放地址验证通过。
-- 删除首页“AI帮你签-测试”入口，焚绝-极限白嫖按钮恢复单独一行显示。
+- 修复模型聊天不支持 Markdown 格式的问题，支持标题、粗斜体、列表、引用、代码块、链接和表格，实时回复与历史聊天均生效。
 
 ## 之前几版
+
+**0.32.169**（2026-10-29）
+
+- 修复红果短剧匿名设备播放链路：按网页播放模型、匿名 App 播放模型、备用接口顺序解析，首集与末集播放地址验证通过。
+- 删除首页“AI帮你签-测试”入口，焚绝-极限白嫖按钮恢复单独一行显示。
 
 **0.32.167**（2026-10-22）
 
