@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.173**（2026-11-11），Android 8.0 及以上，只支持 ARM64，安装包约 96.29 MiB。
+最新版 **0.32.174**（2026-11-11），Android 8.0 及以上，只支持 ARM64，安装包约 96.29 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.173/LINUXDO_XIAOZHUSHOU-v0.32.173.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.174/LINUXDO_XIAOZHUSHOU-v0.32.174.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -15,6 +15,10 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 - 修复了一些已知BUG
 
 ## 之前几版
+
+**0.32.173**（2026-11-11）
+
+- 修复了一些已知BUG
 
 **0.32.172**（2026-11-07）
 
@@ -77,7 +81,8 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 - 网关提供 `/v1/models`、`/v1/chat/completions`、`/v1/responses`、`/v1/messages`，但不等于所有供应商的扩展都支持，以实际测试为准。
 - 短剧固定直连，不走 APP 代理和系统代理；系统 VPN、广告过滤仍可能影响连接。
 - APP 和论坛默认跟随后台 DoH，初始使用一摩尔氚 Plus；后台更换默认后，新连接自动使用同步后的线路。也可手动指定。
-- 授权页按直连、默认 DoH、已启用加密中继依次检测；DoH 与中继不替代第三方要求的人工验证。
+- 注册授权复用 APP 当前 DoH，已启用时优先使用；首次页面失败有限回退，进入登录后保持原出口。
+- 后台备用节点仅支持 HTTP/HTTPS CONNECT、SOCKS5，未添加真实代理时关闭；第三方要求的人工验证仍由用户完成。
 - 源的数量、名称和可用性由后台配置决定，以 APP 同步后的列表为准。
 - 激活、续费、模型和第三方内容依赖各自服务，价格以 APP 当时显示为准。
 

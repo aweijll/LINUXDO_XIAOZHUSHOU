@@ -10,15 +10,15 @@
 
 当前仓库只提供官方 APK、文档和版本记录，不在 Git 历史中提交 APK 源文件。
 
-## 当前版本：0.32.173
+## 当前版本：0.32.174
 
-- 文件：`LINUXDO_XIAOZHUSHOU-v0.32.173.apk`
+- 文件：`LINUXDO_XIAOZHUSHOU-v0.32.174.apk`
 
-- versionCode：`319`
+- versionCode：`320`
 
-- 大小：`100,963,887 bytes`（约 `96.29 MiB`）
+- 大小：`100,969,064 bytes`（约 `96.29 MiB`）
 
-- APK SHA-256：`5cbf008c0cdc3fcb26160e583c63bb179171caa2c9cae2ee46e66d01217e0a2e`
+- APK SHA-256：`ee998669db9f80a7cf4df58603e9f03029b7785ce9affbd9386792b801f631fe`
 
 - 签名方案：V2＋V3 验签通过；沿用原证书
 
@@ -30,27 +30,27 @@
 
 - 系统要求：Android 8.0（API 26）及以上
 
-本页记录对应 0.32.173；未来版本请同时核对相应 Release，不能用旧版哈希校验新版 APK。
+本页记录对应 0.32.174；未来版本请同时核对相应 Release，不能用旧版哈希校验新版 APK。
 
 ## Windows PowerShell
 
 ```powershell
 
-Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.173.apk' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.174.apk' -Algorithm SHA256
 
 ```
 
-大小必须为 `100963887` 字节，SHA-256 必须完全一致。
+大小必须为 `100969064` 字节，SHA-256 必须完全一致。
 
 ## Linux / macOS
 
 ```bash
 
-sha256sum LINUXDO_XIAOZHUSHOU-v0.32.173.apk
+sha256sum LINUXDO_XIAOZHUSHOU-v0.32.174.apk
 
 # 或
 
-shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.173.apk
+shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.174.apk
 
 ```
 
