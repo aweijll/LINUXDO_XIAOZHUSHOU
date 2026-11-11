@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.172**（2026-11-07），Android 8.0 及以上，只支持 ARM64，安装包约 96.26 MiB。
+最新版 **0.32.173**（2026-11-11），Android 8.0 及以上，只支持 ARM64，安装包约 96.29 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.172/LINUXDO_XIAOZHUSHOU-v0.32.172.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.173/LINUXDO_XIAOZHUSHOU-v0.32.173.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,12 +12,19 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
+- 修复启动授权服务一直连接中、需要多次手动重试的问题，支持主备入口自动检测和有限重试。
+- APP 和 LinuxDO 论坛默认跟随后台 DoH 线路，初始使用一摩尔氚 Plus；后台可设置默认线路，APP 同步后用于新连接，保留手动指定选项。
+- LinuxDO 注册授权支持直连、后台默认 DoH、备用加密中继逐级回退，后台可配置多个备用节点及启停、优先级。
+- 授权页独立网络和存储，固定登录出口；补齐短期票据、超时与错误提示，以及后台线路监控。
+
+## 之前几版
+
+**0.32.172**（2026-11-07）
+
 - 修复智能助手、模型聊天和 LINUXDO 帖子朗读约 50 字后停止的问题。
 - 优化首句起播、音频预取和段落衔接，失败仅重试未播放的分段。
 - 新增无需 API Key 的百度翻译、Google 翻译朗读及自动备用模式，保留 Edge 多音色。
 - 修复系统语音引擎不可见，支持选择已安装引擎和离线中文音色；修复失焦停播及失败后重复朗读。
-
-## 之前几版
 
 **0.32.169**（2026-10-29）
 
@@ -72,7 +79,8 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 - 网关提供 `/v1/models`、`/v1/chat/completions`、`/v1/responses`、`/v1/messages`，但不等于所有供应商的扩展都支持，以实际测试为准。
 - 短剧固定直连，不走 APP 代理和系统代理；系统 VPN、广告过滤仍可能影响连接。
-- DoH 只是换一条加密 DNS/连接路线，不能保证永远免 Cloudflare 验证。
+- APP 和论坛默认跟随后台 DoH，初始使用一摩尔氚 Plus；后台更换默认后，新连接自动使用同步后的线路。也可手动指定。
+- 授权页按直连、默认 DoH、已启用加密中继依次检测；DoH 与中继不替代第三方要求的人工验证。
 - 源的数量、名称和可用性由后台配置决定，以 APP 同步后的列表为准。
 - 激活、续费、模型和第三方内容依赖各自服务，价格以 APP 当时显示为准。
 
