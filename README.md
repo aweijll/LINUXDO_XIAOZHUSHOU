@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.178**（2026-11-14），Android 8.0 及以上，只支持 ARM64，安装包约 96.27 MiB。
+最新版 **0.32.179**（2026-11-15），Android 8.0 及以上，只支持 ARM64，安装包约 96.28 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.178/LINUXDO_XIAOZHUSHOU-v0.32.178.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.179/LINUXDO_XIAOZHUSHOU-v0.32.179.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,11 +12,15 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
+隐藏内置 LinuxDo 登录按钮，保留浏览器授权入口。
+
+## 之前几版
+
+**0.32.178**（2026-11-14）
+
 1. 修复登录时长时间停留在“正在连接服务”及接口测速结果延迟显示的问题。
 2. LinuxDo 登录网页和后台认证自动使用专用加密通道，优先圣何塞、家庭备用，无需手动开启 APP 代理。
 3. 授权页使用独立登录存储，更新后首次授权需要重新登录。
-
-## 之前几版
 
 **0.32.177**（2026-11-12）
 
