@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.179**（2026-11-15），Android 8.0 及以上，只支持 ARM64，安装包约 96.28 MiB。
+最新版 **0.32.180**（2026-11-18，versionCode 326），Android 8.0 及以上，只支持 ARM64，安装包约 96.29 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.179/LINUXDO_XIAOZHUSHOU-v0.32.179.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.180/LINUXDO_XIAOZHUSHOU-v0.32.180.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,9 +12,16 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
-隐藏内置 LinuxDo 登录按钮，保留浏览器授权入口。
+1. 论坛 AI 按所选模型和站点回答。连接在发送前失败时自动重试一次，回答中途断开会保留已收到的内容。
+2. 模型列表优先显示缓存，打开话题只补读缺失楼层，减少重复请求和等待。
+3. 聊天历史先显示本地记录，待同步的内容在后台恢复。继续聊天时保护新回复，遇到内容冲突会保留副本。
+4. 更多发帖式样精简为七种 Markdown 特效，修复多图导入、链接和尺寸丢失，以及图片顺序错乱。
 
 ## 之前几版
+
+**0.32.179**（2026-11-15）
+
+隐藏内置 LinuxDo 登录按钮，保留浏览器授权入口。
 
 **0.32.178**（2026-11-14）
 
