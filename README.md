@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.190**（2026-11-22，versionCode 336），Android 8.0 及以上，只支持 ARM64，安装包约 98.70 MiB。
+最新版 **0.32.191**（2026-11-23，versionCode 337），Android 8.0 及以上，只支持 ARM64，安装包约 98.73 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.190/LINUXDO_XIAOZHUSHOU-v0.32.190.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.191/LINUXDO_XIAOZHUSHOU-v0.32.191.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -15,6 +15,10 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 修复了一些bug。
 
 ## 之前几版
+
+**0.32.190**（2026-11-22）
+
+修复了一些bug。
 
 **0.32.189**（2026-11-22）
 
@@ -157,7 +161,7 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 - **站点**：支持 NEWAPI、One API、SUB2API、AIHubMix 和兼容站点；管账号、Cookie、余额、令牌、标签，能批量同步，也能给单个站点配代理。
 - **签到**：自动、手动、站外签到，逐站看结果；登录失效可以在 APP 里重新验证后继续。
 - **模型**：多站点多 Key 拉模型，测 OpenAI、Responses、Claude 三种协议，支持筛选、排序、别名和分组。
-- **大肥鱼**：保留聊天/生图模型选择、附件、人格、共享记忆和朗读；移除自动浏览器搜索与跳转，保留原HTTP联网和APP直接查询，增加独立通用Agent、审批、请求设置与HTTPS MCP接入；SSH纯提示词技能与兼容MCP目录只读引用，SSH源码、服务器功能及开关保持原样。开启APP管理后注入真实数据；技能目录渐进显示、正文按需读取。不嵌入大型运行环境，不需要电脑或自建Agent服务器；推理仍使用已配置模型服务，不是离线模型。
+- **大肥鱼**：保留聊天/生图模型选择、附件、人格、共享记忆和朗读；独立通用Agent、审批与请求设置；MCP单开关自动启动并连接SSH本机服务，复用已配置技能；修复其他MCP添加、保存反馈和本机/局域网HTTP接入。设置改为分组全屏页面，保存后停留并按层级返回。SSH仅新增本机MCP内部启动桥，服务器管理与审批规则保持，不自动构建SSH页面或连接服务器。原HTTP联网、APP真实查询和按需技能读取保留，不恢复浏览器自动搜索跳转。不嵌入大型运行环境；推理仍使用已配置模型服务，不是离线模型。
 - **本地网关**：手机开一个 OpenAI 兼容接口给电脑用，支持三种协议、SSE、模型路由和用量账本。
 - **SSH**：终端、多会话、传文件、看服务器状态、管容器、端口转发，也能让 AI 帮忙排查。
 - **LINUX.DO**：首页、帖子、回复、通知、关爱佬友，支持连续朗读和 BOOST 引用回复。
