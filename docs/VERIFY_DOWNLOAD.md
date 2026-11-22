@@ -10,17 +10,17 @@
 
 当前仓库只提供官方 APK、文档和版本记录，不在 Git 历史中提交 APK 源文件。
 
-## 当前版本：0.32.189
+## 当前版本：0.32.190
 
 发布日期：2026-11-22
 
-- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.189.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.189/LINUXDO_XIAOZHUSHOU-v0.32.189.apk)
+- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.190.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.190/LINUXDO_XIAOZHUSHOU-v0.32.190.apk)
 
-- versionCode：`335`
+- versionCode：`336`
 
-- 大小：`103,434,224 bytes`（约 `98.64 MiB`）
+- 大小：`103,490,325 bytes`（约 `98.70 MiB`）
 
-- APK SHA-256：`d622e73b1d368849b040c56ac1677f1b51048f8e3ddf88f956e76b6a5934b0ae`
+- APK SHA-256：`1a9ca1a64d148992b53695741675615a899613e3615fe884f4d8049557215032`
 
 - 签名方案：V2＋V3 验签通过，沿用原证书
 
@@ -32,27 +32,27 @@
 
 - 系统要求：Android 8.0（API 26）及以上
 
-本页记录对应 0.32.189。核验其他版本时，请使用该版本的大小、哈希和证书指纹。
+本页记录对应 0.32.190。核验其他版本时，请使用该版本的大小、哈希和证书指纹。
 
 ## Windows PowerShell
 
 ```powershell
 
-Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.189.apk' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.190.apk' -Algorithm SHA256
 
 ```
 
-大小必须为 `103434224` 字节，SHA-256 必须完全一致。
+大小必须为 `103490325` 字节，SHA-256 必须完全一致。
 
 ## Linux / macOS
 
 ```bash
 
-sha256sum LINUXDO_XIAOZHUSHOU-v0.32.189.apk
+sha256sum LINUXDO_XIAOZHUSHOU-v0.32.190.apk
 
 # 或
 
-shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.189.apk
+shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.190.apk
 
 ```
 
@@ -77,6 +77,31 @@ shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.189.apk
 自 0.32.179 起隐藏内置 LinuxDo 登录按钮，保留“浏览器授权”入口。外置浏览器使用自身网络与登录会话。文件哈希、签名和自动检查用于确认安装包完整性，不代表真人登录、本人验证、同意授权及注册码绑定已完成；本页不声明内置授权问题已经修复。
 
 ## 历史版本校验
+
+<details>
+<summary>0.32.189（2026-11-22）</summary>
+
+发布日期：2026-11-22
+
+- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.189.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.189/LINUXDO_XIAOZHUSHOU-v0.32.189.apk)
+
+- versionCode：`335`
+
+- 大小：`103,434,224 bytes`（约 `98.64 MiB`）
+
+- APK SHA-256：`d622e73b1d368849b040c56ac1677f1b51048f8e3ddf88f956e76b6a5934b0ae`
+
+- 签名方案：V2＋V3 验签通过，沿用原证书
+
+- 签名证书 SHA-256：`0719efd57fa6103351bbf645ee57d685be0fd7f4265d17f0ee608c3e1c12f07d`
+
+- 包名：`com.jxbp.aihub`
+
+- 架构：仅 `arm64-v8a`，31 个原生库通过 16 KiB 对齐检查
+
+- 系统要求：Android 8.0（API 26）及以上
+
+</details>
 
 <details>
 <summary>0.32.188（2026-11-22）</summary>
