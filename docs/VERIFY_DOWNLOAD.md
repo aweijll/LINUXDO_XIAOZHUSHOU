@@ -10,17 +10,17 @@
 
 当前仓库只提供官方 APK、文档和版本记录，不在 Git 历史中提交 APK 源文件。
 
-## 当前版本：0.32.191
+## 当前版本：0.32.192
 
 发布日期：2026-11-23
 
-- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.191.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.191/LINUXDO_XIAOZHUSHOU-v0.32.191.apk)
+- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.192.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.192/LINUXDO_XIAOZHUSHOU-v0.32.192.apk)
 
-- versionCode：`337`
+- versionCode：`338`
 
-- 大小：`103,524,668 bytes`（约 `98.73 MiB`）
+- 大小：`103,558,444 bytes`（约 `98.76 MiB`）
 
-- APK SHA-256：`d074fee284384f3c51a09aa25f19894b5042b83c972cb09f19b7a24c215adfcd`
+- APK SHA-256：`ec2d74d220af385c3c4d2361a71422b29525e70e0620e3c0fa22cbede10430c7`
 
 - 签名方案：V2＋V3 验签通过，沿用原证书
 
@@ -32,27 +32,33 @@
 
 - 系统要求：Android 8.0（API 26）及以上
 
-本页记录对应 0.32.191。核验其他版本时，请使用该版本的大小、哈希和证书指纹。
+- Android 单元测试：3038 项，失败 0、错误 0、跳过 0；Lint 错误 0、致命错误 0、警告 370、提示 21。
+
+- 搜索验证：本轮 Windows JVM 使用聊天产线实现对两个指定公开关键词执行匿名 GET，取得搜索结果并读取正文，核对缓存与请求中取消；不使用用户凭据或浏览器。此记录不等于 Android 手机、所有搜索引擎或任意网络均已通过。
+
+- SSH 范围：本轮未修改 SSH，沿用 0.32.191 的 AAR 及既有核验；不将旧版 SSH 测试计入本轮新增验证。
+
+本页记录对应 0.32.192。核验其他版本时，请使用该版本的大小、哈希和证书指纹。
 
 ## Windows PowerShell
 
 ```powershell
 
-Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.191.apk' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.192.apk' -Algorithm SHA256
 
 ```
 
-大小必须为 `103524668` 字节，SHA-256 必须完全一致。
+大小必须为 `103558444` 字节，SHA-256 必须完全一致。
 
 ## Linux / macOS
 
 ```bash
 
-sha256sum LINUXDO_XIAOZHUSHOU-v0.32.191.apk
+sha256sum LINUXDO_XIAOZHUSHOU-v0.32.192.apk
 
 # 或
 
-shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.191.apk
+shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.192.apk
 
 ```
 
@@ -77,6 +83,31 @@ shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.191.apk
 自 0.32.179 起隐藏内置 LinuxDo 登录按钮，保留“浏览器授权”入口。外置浏览器使用自身网络与登录会话。文件哈希、签名和自动检查用于确认安装包完整性，不代表真人登录、本人验证、同意授权及注册码绑定已完成；本页不声明内置授权问题已经修复。
 
 ## 历史版本校验
+
+<details>
+<summary>0.32.191（2026-11-23）</summary>
+
+发布日期：2026-11-23
+
+- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.191.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.191/LINUXDO_XIAOZHUSHOU-v0.32.191.apk)
+
+- versionCode：`337`
+
+- 大小：`103,524,668 bytes`（约 `98.73 MiB`）
+
+- APK SHA-256：`d074fee284384f3c51a09aa25f19894b5042b83c972cb09f19b7a24c215adfcd`
+
+- 签名方案：V2＋V3 验签通过，沿用原证书
+
+- 签名证书 SHA-256：`0719efd57fa6103351bbf645ee57d685be0fd7f4265d17f0ee608c3e1c12f07d`
+
+- 包名：`com.jxbp.aihub`
+
+- 架构：仅 `arm64-v8a`，31 个原生库通过 16 KiB 对齐检查
+
+- 系统要求：Android 8.0（API 26）及以上
+
+</details>
 
 <details>
 <summary>0.32.190（2026-11-22）</summary>
