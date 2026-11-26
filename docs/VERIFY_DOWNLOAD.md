@@ -10,7 +10,96 @@
 
 当前仓库只提供官方 APK、文档和版本记录，不在 Git 历史中提交 APK 源文件。
 
-## 当前版本：0.32.195
+## 当前版本：0.32.196
+
+发布日期：2026-11-26
+
+本次更新：
+
+1. 移除大肥鱼的 APP 控制功能，保留全部资源搜索与聊天内播放。
+2. 改进多轮对话理解与工具选择，优化资源意图识别、作品匹配和联网搜索相关性。
+3. 修复搜索分流、无关结果误用及部分网页读取问题，减少答非所问。
+
+- 文件：[`LINUXDO_XIAOZHUSHOU-v0.32.196.apk`](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.196/LINUXDO_XIAOZHUSHOU-v0.32.196.apk)
+
+- versionCode：`342`
+
+- 大小：`104,294,682 bytes`（约 `99.46 MiB`）
+
+- APK SHA-256：`475d755843a7c48c43814cc05275102c49574e2ec4ef808ed20d90f786788335`
+
+- 签名方案：V2＋V3 验签通过，沿用原证书
+
+- 签名证书 SHA-256：`0719efd57fa6103351bbf645ee57d685be0fd7f4265d17f0ee608c3e1c12f07d`
+
+- 包名：`com.jxbp.aihub`
+
+- 架构：仅 `arm64-v8a`，32 个原生库通过 16 KiB 对齐检查
+
+- 系统要求：Android 8.0（API 26）及以上
+
+- Android 单元测试：3427 项，失败 0、错误 0、跳过 0；Lint 错误 0、致命错误 0、警告 381、提示 22。
+
+- IPTV 验证范围：本轮单元契约覆盖配置线路、HTTP/HTTPS 订阅与播放地址、直连请求、资源封面、DNS 与资源入口；自动化测试不等于全部订阅或频道均可播放。
+
+- 联网验证范围：本轮单元契约覆盖 APP 控制退役、旧配置兼容、资源意图与作品匹配、多轮对话理解与工具选择、自然搜索表达、跟进重试、指定站点限制、相关性筛选、长工具结果保留、旧步骤结果复用、来源切换、正文解析及错误处理；公共搜索和各站点的实时可用性仍取决于网络及服务端。
+
+- 实际联网抽样：Windows JVM 完成 4 组公开查询、正文读取、缓存及取消检查；其中 GitHub 热门项目核对官方当日榜单与仓库来源，其余查询检查主题相关性。使用当前生产网络代码，属于电脑端网络模块验证，不代替正式 APK 聊天界面验收。
+
+- 设备与播放：按用户要求，本轮未连接手机，未执行手机安装、聊天界面或频道实播测试；实际设备体验由用户验收。
+
+- 原生库与第三方归档：本轮检查正式 APK 的 ARM64 库及其与上一版的字节一致性；复用的 RTMP 对应源码归档重新核对成员、许可证、源码及内外 SHA-256。未将上一版构建或测试结果计作本轮重新运行。
+
+- IPTV 第三方许可：本版本同时提供 [RTMP 对应源码](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.196/corresponding-source-20261125.tar.gz) 与 [SHA-256 校验文件](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.196/corresponding-source-20261125.tar.gz.sha256)，包含 LGPL 组件的本地修补、完整许可和重建替换说明。
+
+本页记录对应 0.32.196。核验其他版本时，请使用该版本的大小、哈希和证书指纹。
+
+## Windows PowerShell
+
+```powershell
+
+Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.196.apk' -Algorithm SHA256
+
+```
+
+大小必须为 `104294682` 字节，SHA-256 必须完全一致。
+
+## Linux / macOS
+
+```bash
+
+sha256sum LINUXDO_XIAOZHUSHOU-v0.32.196.apk
+
+# 或
+
+shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.196.apk
+
+```
+
+## 安装前检查
+
+以下任意一项不匹配，都不要安装：
+
+- 地址不是 `github.com/aweijll/LINUXDO_XIAOZHUSHOU`；
+
+- 文件名、版本号或大小不对；
+
+- SHA-256 不一致；
+
+- 签名证书不是本页记录的官方证书；
+
+- APK 来自聊天群、网盘、私聊链接或不明镜像。
+
+更新时直接覆盖安装，不要先卸载。卸载会删除 APP 私有数据。
+
+## 授权验收范围
+
+自 0.32.179 起隐藏内置 LinuxDo 登录按钮，保留“浏览器授权”入口。外置浏览器使用自身网络与登录会话。文件哈希、签名和自动检查用于确认安装包完整性，不代表真人登录、本人验证、同意授权及注册码绑定已完成；本页不声明内置授权问题已经修复。
+
+## 历史版本校验
+
+<details>
+<summary>0.32.195（2026-11-26）</summary>
 
 发布日期：2026-11-26
 
@@ -52,51 +141,7 @@
 
 - IPTV 第三方许可：本版本同时提供 [RTMP 对应源码](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.195/corresponding-source-20261125.tar.gz) 与 [SHA-256 校验文件](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.195/corresponding-source-20261125.tar.gz.sha256)，包含 LGPL 组件的本地修补、完整许可和重建替换说明。
 
-本页记录对应 0.32.195。核验其他版本时，请使用该版本的大小、哈希和证书指纹。
-
-## Windows PowerShell
-
-```powershell
-
-Get-FileHash -LiteralPath '.\LINUXDO_XIAOZHUSHOU-v0.32.195.apk' -Algorithm SHA256
-
-```
-
-大小必须为 `104314135` 字节，SHA-256 必须完全一致。
-
-## Linux / macOS
-
-```bash
-
-sha256sum LINUXDO_XIAOZHUSHOU-v0.32.195.apk
-
-# 或
-
-shasum -a 256 LINUXDO_XIAOZHUSHOU-v0.32.195.apk
-
-```
-
-## 安装前检查
-
-以下任意一项不匹配，都不要安装：
-
-- 地址不是 `github.com/aweijll/LINUXDO_XIAOZHUSHOU`；
-
-- 文件名、版本号或大小不对；
-
-- SHA-256 不一致；
-
-- 签名证书不是本页记录的官方证书；
-
-- APK 来自聊天群、网盘、私聊链接或不明镜像。
-
-更新时直接覆盖安装，不要先卸载。卸载会删除 APP 私有数据。
-
-## 授权验收范围
-
-自 0.32.179 起隐藏内置 LinuxDo 登录按钮，保留“浏览器授权”入口。外置浏览器使用自身网络与登录会话。文件哈希、签名和自动检查用于确认安装包完整性，不代表真人登录、本人验证、同意授权及注册码绑定已完成；本页不声明内置授权问题已经修复。
-
-## 历史版本校验
+</details>
 
 <details>
 <summary>0.32.194（2026-11-26）</summary>
